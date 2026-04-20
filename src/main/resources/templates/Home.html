@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta >
+    <!-- Primary SEO Meta Tags -->
+    <title>Kundali API | Astrology API | BirthChart API | MBStudioz</title>
+    <meta name="title" content="Kundali API | Astrology API | BirthChart API | MBStudioz">
+    <meta name="description" content="Kundali API by MBStudioz provides Vedic Astrology Birth Charts, planetary positions, and SVG charts. Free for students, with affordable commercial plans.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kundali.mbstudioz.in/">
+    <meta property="og:title" content="Kundali API | Astrology API | BirthChart API | MBStudioz">
+    <meta property="og:description" content="Use Kundali API to generate Vedic Astrology birth charts, planetary positions, Nakshatra details, and SVG charts. Free for students, commercial plans available.">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://kundali.mbstudioz.in/">
+    <meta property="twitter:title" content="Kundali API | Astrology API | BirthChart API | MBStudioz">
+    <meta property="twitter:description" content="Vedic Astrology API for developers – generate birth charts, planets, Nakshatra data, and SVG chart outputs.">
+
+
+    <!-- Additional SEO -->
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Mainak Banerjee">
+    <meta name="keywords" content="Kundali API, Astrology API, Birth Chart API, Vedic Astrology, Horoscope API, MBStudioz, Planetary Positions, Nakshatra API, Astrology Software">
+
+    <link rel="stylesheet" th:href="@{/Css/home.css}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        function toggle() {
+            const menu = document.getElementById("content");
+            const closeBtn = document.querySelector(".close");
+            const hamburger = document.getElementById("hamburger");
+
+
+            menu.classList.toggle('active');
+            closeBtn.classList.toggle('active');
+            hamburger.classList.toggle('hide');
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="name" >
+            <svg alt="Mainak Banerjee Portfolio Logo" width="150px" height="55px" viewBox="0 0 370 95" class="looka-1j8o68f"><defs id="SvgjsDefs2621"><linearGradient id="SvgjsLinearGradient2626"><stop id="SvgjsStop2627" stop-color="#00ddff" offset="0"></stop><stop id="SvgjsStop2628" stop-color="#ff00d4" offset="1"></stop></linearGradient></defs><g id="SvgjsG2622" featurekey="2ou6gm-0" transform="matrix(1.25,0,0,1.25,-12.499991655349731,-14.999847412109375)" fill="url(#SvgjsLinearGradient2626)"><g xmlns="http://www.w3.org/2000/svg" transform="translate(0,-952.36218)"><path d="m 60.7828,964.36215 27.1809,0.8834 -27.1809,25.9958 z m -1.9745,1.4513 0,26.7845 -25.2681,0 c 8.6166,-8.7334 16.8796,-17.8103 25.2681,-26.7845 z m 27.7053,3.628 3.4864,1.1989 -12.5877,7.4768 z m -68.1835,2.9656 5.5226,0 12.8654,14.0705 -5.9854,6.1204 -12.4026,0 c 9e-4,-6.7347 0,-13.4597 0,-20.1909 z m -1.9746,1.2304 0,5.8364 -6.3555,0 z m 3.363,20.9796 38.627,0 -10.7675,29.43465 z m 39.0898,4.54286 0,41.20229 -12.5878,-6.8775 c 4.1972,-11.443 8.3886,-22.879 12.5878,-34.32479 z" style="text-indent:0;text-transform:none;direction:ltr;block-progression:tb;baseline-shift:baseline;enable-background:accumulate;" fill="url(#SvgjsLinearGradient2626)" fill-opacity="1" stroke="none" marker="none" visibility="visible" display="inline" overflow="visible"></path></g></g><g id="SvgjsG2623" featurekey="kZnDdN-0" transform="matrix(3.922183768696969,0,0,3.922183768696969,117.41135837601627,-3.533095131209965)" fill="#000000"><path d="M0.78 20 l0 -0.54 l0.34 -0.34 c0.36 -0.36 0.56 -0.82 0.56 -1.36 l0 -9.32 c0 -0.48 -0.22 -0.92 -0.52 -1.28 l-0.5 -0.58 l0 -0.58 l3.18 0 l4.98 11.58 l4.9 -11.58 l3.28 0 l0 0.58 l-0.54 0.58 c-0.32 0.34 -0.52 0.8 -0.52 1.3 l0 9.16 c0 0.46 0.14 0.92 0.5 1.28 l0.52 0.56 l0 0.54 l-4.24 0 l0 -0.54 l0.52 -0.56 c0.32 -0.36 0.48 -0.82 0.48 -1.28 l0 -9.8 l-4.56 10.66 l-2.16 0 l-4.48 -10.42 l0 10 c0 0.52 0.24 1.02 0.62 1.4 l0 0.54 l-2.36 0 z M25.92 20 l-0.54 -0.14 c-0.9 -0.24 -1.88 -0.24 -2.72 0.02 c-0.34 0.1 -0.66 0.12 -0.98 0.12 c-1.96 0 -3.52 -1.54 -3.52 -3.48 c0 -1.9 1.56 -3.46 3.52 -3.46 c0.78 0 1.48 0.24 2.02 0.62 l0 -0.02 s0.16 -2.44 -0.92 -2.74 c-1.12 -0.32 -1.52 0.34 -2.34 1.58 l-1.68 -0.02 c0.52 -1.32 1.54 -2.24 2.98 -2.24 c0.54 0 1.1 0.1 1.64 0.26 c0 0 2.54 0.78 2.54 3.16 l0 6.34 z M19.78 17.02 c0.46 1.5 1.6 2.56 2.76 2.3 c1.12 -0.26 1.64 -1.72 1.18 -3.28 c-0.44 -1.48 -1.74 -2.54 -2.86 -2.26 c-1.14 0.28 -1.54 1.72 -1.08 3.24 z M32.74 20 l0 -0.58 c0.66 -0.68 1.06 -1.62 1.06 -2.6 l0 -3.3 c0 -0.96 -0.36 -1.9 -1.04 -2.6 l0 -0.58 l2.72 0 c-0.16 -2.68 -2.84 -3.26 -4.34 -3.26 l-0.9 0 c0.2 0.26 0.32 0.58 0.32 0.92 c0 0.76 -0.62 1.36 -1.4 1.36 c-0.76 0 -1.4 -0.6 -1.4 -1.36 c0 -0.78 0.64 -1.44 1.4 -1.44 l1.54 0 c0.9 0 1.94 0.16 2.62 0.42 c1.2 0.46 2.66 1.54 2.66 3.36 l0 1.1 c0.62 -0.38 1.38 -0.62 2.16 -0.62 c2.32 0 3.62 1.46 3.62 4.88 l0 1.14 c0 0.96 0.38 1.9 1.02 2.58 l0 0.58 l-4.26 0 l0 -0.58 c0.68 -0.68 1.04 -1.62 1.04 -2.58 l0 -2.4 c0 -1.42 -1.1 -2.8 -2.34 -2.8 c-0.64 0 -1.24 0.44 -1.24 1.16 l0 4.04 c0 0.96 0.36 1.9 1.04 2.58 l0 0.58 l-4.28 0 z M27.62 20 l0 -0.58 c0.58 -0.68 0.92 -1.62 0.92 -2.58 l0 -3.32 c0 -0.96 -0.34 -1.9 -0.92 -2.62 l0 -0.56 l2.8 0 l0 6.5 c0 0.96 0.3 1.9 0.88 2.58 l0 0.58 l-3.68 0 z M51.660000000000004 20 l-0.54 -0.14 c-0.9 -0.24 -1.88 -0.24 -2.72 0.02 c-0.34 0.1 -0.66 0.12 -0.98 0.12 c-1.96 0 -3.52 -1.54 -3.52 -3.48 c0 -1.9 1.56 -3.46 3.52 -3.46 c0.78 0 1.48 0.24 2.02 0.62 l0 -0.02 s0.16 -2.44 -0.92 -2.74 c-1.12 -0.32 -1.52 0.34 -2.34 1.58 l-1.68 -0.02 c0.52 -1.32 1.54 -2.24 2.98 -2.24 c0.54 0 1.1 0.1 1.64 0.26 c0 0 2.54 0.78 2.54 3.16 l0 6.34 z M45.52 17.02 c0.46 1.5 1.6 2.56 2.76 2.3 c1.12 -0.26 1.64 -1.72 1.18 -3.28 c-0.44 -1.48 -1.74 -2.54 -2.86 -2.26 c-1.14 0.28 -1.54 1.72 -1.08 3.24 z M53.20000000000001 20 l0 -0.54 c0.68 -0.74 1.04 -1.66 1.04 -2.58 l0 -7.7 c0 -0.96 -0.36 -1.92 -1.04 -2.6 l0 -0.58 l3.2 0 l0 8.22 l3.7 -2.9 l-0.14 -0.64 l0 -0.34 l3 0 l0 0.34 l-1.54 0.64 l-3.6 2.86 l1.02 -0.04 l3.82 4.18 c0.04 0.06 0.24 0.2 0.34 0.26 l1.4 0.88 l0 0.54 l-4.24 0 l0 -0.54 c0.5 -0.34 0.64 -1.06 0.26 -1.52 l-2.88 -3.54 l-1.14 0.9 l0 1.6 c0 0.94 0.34 1.82 1.02 2.56 l0 0.54 l-4.22 0 z"></path></g></svg>
+        </div>
+        <nav class="content" id="content" aria-label="Main navigation">
+            <a href="https://mainak.mbstudioz.in" aria-label="Go to Home page">Home</a>
+            <a href="https://mainak.mbstudioz.in/about" aria-label="Learn more about me">About</a>
+            <a href="https://mainak.mbstudioz.in/skills" aria-label="Explore my skills">Skills</a>
+            <a href="https://mainak.mbstudioz.in/projects" aria-label="View my projects">Projects</a>
+        </nav>
+
+        <div class="social-icons">
+            <a href="https://www.instagram.com/mb.studios__/" target="_blank" class="social-link" aria-label="Visit my Instagram profile"
+               title="Instagram" >
+                <i class="fab fa-instagram"></i>
+                <span class="sr-only">Instagram</span>
+            </a>
+            <a href="https://www.linkedin.com/in/mainak-banerjee-100/" target="_blank" class="social-link" aria-label="Visit my LinkedIn Profile"
+               title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+                <span class="sr-only">Instagram</span>
+            </a>
+            <a href="https://www.facebook.com/akash.banerjee.129357" target="_blank" class="social-link"  aria-label="Visit my Facebook profile"
+               title="Facebook">
+                <i class="fab fa-facebook"></i>
+                <span class="sr-only">Facebook</span>
+            </a>
+        </div>
+
+        <div class="hamburger" id="hamburger" onclick="toggle()">
+            <div class="list"></div>
+            <div class="list"></div>
+            <div class="list"></div>
+        </div>
+        <div class="close" onclick="toggle()">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+
+    </nav>
+</header>
+
+
+<div class="hero">
+    <h1>About BirthChart API</h1>
+    <div class="about">
+        <span>This Api Provides Astrological Birth Chart According to North Indian vedic Astrology.Developers May Build Astrological chats or choose to display their the data according to their need.</span>
+        <div>
+            <button class="copy" onclick="copyToClipboard('request')"><i class="fas fa-clipboard"></i></button>
+            <pre>
+            <span>API End Point</span>
+            <code class="request" id="request">https://kundali.mbstudioz.in/api/getchart,
+                Method: POST,
+                headers: {
+                        'Content-Type': 'application/json'
+                         },
+                body: " {
+                        "username": "XXXX",
+                        "password": "XXXXXXXX",
+                        "date": "1994-10-13",
+                        "time": "14:30",
+                        "latitude": 22.5744,
+                        "longitude": 88.3629
+                        }"</code></pre>
+        </div>
+
+        <span style="color: white ; font-size: large">To use this Api you need a UserName And Password which will be provided by the tech Team.For development Purpose this Api is free to use for Students.For Comercial use it is chargeable at a minimum of 500Rs per month.To get a Valid UserName and password just contact the tech team by clicking the Contact button at bottom of the Page.
+
+        </span>
+        <span>This Api provides the Following Data:</span>
+        <ul>
+            <li>SVG Houchart</li>
+            <li>Planet Details : longitude of th planet , longitude of Planet in the house where it is placed, zodiac where it is Placed,Nakshatra Placement of the planet,Pada</li>
+            <li>13 Planets : Sun,Moon,Mercury,Venus,Mars,Jupiter,Saturn,Uranus,Neptune,Rahu_Mean,Rahu_True,Ketu_Mean,Ketu_True</li>
+        </ul>
+
+
+        <div>
+            <button class="copy" onclick="copyToClipboard('response')"><i class="fas fa-clipboard"></i></button>
+            <pre>
+            <span>Sample Response:</span>
+            <code id="response">{
+  "planets": {
+    "Rahu_Mean": {
+      "nakshatra": "Punarvasu",
+      "house_longitude": 29.037755399749514,
+      "pada": 3,
+      "house": "Gemini",
+      "longitude": 89.03775539974951
+    },
+    "Saturn": {
+      "nakshatra": "Krittika",
+      "house_longitude": 6.529854316355284,
+      "pada": 3,
+      "house": "Taurus",
+      "longitude": 36.529854316355284
+    },
+    "Moon": {
+      "nakshatra": "Purva Bhadrapada",
+      "house_longitude": 0.28874774254654767,
+      "pada": 4,
+      "house": "Pisces",
+      "longitude": 330.28874774254655
+    },
+    "Uranus": {
+      "nakshatra": "Dhanishtha",
+      "house_longitude": 24.723943942018366,
+      "pada": 1,
+      "house": "Capricorn",
+      "longitude": 294.72394394201837
+    },
+    "Sun": {
+      "nakshatra": "Magha",
+      "house_longitude": 1.2765258454883934,
+      "pada": 1,
+      "house": "Leo",
+      "longitude": 121.2765258454884
+    },
+    "Ketu_True": {
+      "nakshatra": "Uttara Ashadha",
+      "house_longitude": 0.45839832724266216,
+      "pada": 2,
+      "house": "Capricorn",
+      "longitude": 270.45839832724266
+    },
+    "ASC": {
+      "nakshatra": "Rohini",
+      "house_longitude": 20.938769732845024,
+      "pada": 4,
+      "house": "Taurus",
+      "longitude": 50.938769732845024
+    },
+    "Mars": {
+      "nakshatra": "Ashlesha",
+      "house_longitude": 16.908885911700835,
+      "pada": 1,
+      "house": "Cancer",
+      "longitude": 106.90888591170084
+    },
+    "Neptune": {
+      "nakshatra": "Shravana",
+      "house_longitude": 10.766584541046484,
+      "pada": 1,
+      "house": "Capricorn",
+      "longitude": 280.7665845410465
+    },
+    "Jupiter": {
+      "nakshatra": "Rohini",
+      "house_longitude": 14.513039958266162,
+      "pada": 2,
+      "house": "Taurus",
+      "longitude": 44.51303995826616
+    },
+    "Ketu_Mean": {
+      "nakshatra": "Uttara Ashadha",
+      "house_longitude": 29.03775539974953,
+      "pada": 1,
+      "house": "Sagittarius",
+      "longitude": 269.0377553997495
+    },
+    "Venus": {
+      "nakshatra": "Purva Phalguni",
+      "house_longitude": 19.71217569087213,
+      "pada": 2,
+      "house": "Leo",
+      "longitude": 139.71217569087213
+    },
+    "Mercury": {
+      "nakshatra": "Ashlesha",
+      "house_longitude": 26.78583274134381,
+      "pada": 4,
+      "house": "Cancer",
+      "longitude": 116.78583274134381
+    },
+    "Rahu_True": {
+      "nakshatra": "Punarvasu",
+      "house_longitude": 0.45839832724264795,
+      "pada": 4,
+      "house": "Cancer",
+      "longitude": 90.45839832724265
+    }
+  },
+  "svg": "<\svg\n xmlns=\"http://www.w3.org/2000/svg\"\n viewBox=\"0 0 800 461.8802154\">\n<\path d=\"M200,115.4700538, 400,0, 600,115.4700538, 400,230.9401077z\"/><\path d=\"M0,0, 400,0, 200,115.4700538z\"/><\path d=\"M0,0, 200,115.4700538, 0,230.9401077z\"/><\path d=\"M0,230.9401077, 200,115.4700538, 400,230.9401077, 200,346.4101615z\"/><\path d=\"M0,230.9401077, 200,346.4101615, 0,461.8802154z\"/><\path d=\"M0,461.8802154, 200,346.4101615, 400,461.8802154z\"/><\path d=\"M200,346.4101615, 400,230.9401077, 600,346.4101615, 400,461.8802154z\"/><\path d=\"M400,461.8802154, 600,346.4101615, 800,461.8802154z\"/><\path d=\"M600,346.4101615, 800,230.9401077, 800,461.8802154z\"/><\path d=\"M400,230.9401077, 600,115.4700538, 800,230.9401077, 600,346.4101615z\"/><\path d=\"M600,115.4700538, 800 0, 800,230.9401077z\"/><\path d=\"M400,0, 800 0, 600,115.4700538z\"/><\text x=\"360\" y=\"40\" font-size=\"14\" fill=\"black\">2 \<\/text><\text x=\"330\" y=\"56\" font-size=\"12\" fill=\"blue\">ASC Ju Sa\<\/text><\text x=\"50\" y=\"20\" font-size=\"14\" fill=\"black\">3 \<\/text><\text x=\"80\" y=\"36\" font-size=\"12\" fill=\"blue\">Ra_M<\/text><\text x=\"10\" y=\"80\" font-size=\"14\" fill=\"black\">4 <\/text><\text x=\"10\" y=\"96\" font-size=\"12\" fill=\"blue\">Me Ma Ra<\/text><\text x=\"160\" y=\"160\" font-size=\"14\" fill=\"black\">5 <\/text><\text x=\"130\" y=\"176\" font-size=\"12\" fill=\"blue\">Su Ve<\/text><\text x=\"10\" y=\"310\" font-size=\"14\" fill=\"black\">6 <\/text><\text x=\"160\" y=\"390\" font-size=\"14\" fill=\"black\">7 <\/text><\text x=\"360\" y=\"275\" font-size=\"14\" fill=\"black\">8 <\/text><\text x=\"560\" y=\"390\" font-size=\"14\" fill=\"black\">9 <\/text><\text x=\"530\" y=\"406\" font-size=\"12\" fill=\"blue\">Ke_M<\text><\text x=\"700\" y=\"310\" font-size=\"14\" fill=\"black\">10 <\/text><\text x=\"670\" y=\"326\" font-size=\"12\" fill=\"blue\">Uranus Neptune Ke<\/text><\text x=\"556\" y=\"160\" font-size=\"14\" fill=\"black\">11 <\text><\text x=\"696\" y=\"80\" font-size=\"14\" fill=\"black\">12 <\/text><\text x=\"666\" y=\"96\" font-size=\"12\" fill=\"blue\">Mo<\/text><\text x=\"450\" y=\"20\" font-size=\"14\" fill=\"black\">1 <\/text><\/svg>",
+  "ayanamsa": 23.865822467692396
+}</code>
+        </pre>
+        </div>
+
+        <span>Create a div container in your html page with id="svg-container".</span>
+        <span>Fetch data from api</span>
+        <span>add the following javascript code to your javascript.js file linked with the html</span>
+        <div>
+            <button class="copy" onclick="copyToClipboard('javascript')"><i class="fas fa-clipboard"></i></button>
+            <pre>
+                <code id="javascript">
+    function addSVG(response){
+    const svgContent = jsonData.svg;
+    console.log(svgContent);
+    document.getElementById('svg-container').innerHTML = svgContent;
+  }
+
+  addSVG(jsonData);
+                </code>
+            </pre>
+        </div>
+    </div>
+
+    <div class="contact-form">
+        <form id="contact-form" class="contact-form">
+            <h3>Contact Us</h3>
+            <input type="text" name="name" id="name" placeholder="Enter Full Name" required>
+            <input type="email" name="email" id="email" placeholder="Enter Email" required>
+            <input type="tel" name="phone" id="phone" placeholder="Enter a Reachable Number" required>
+            <textarea name="message" id="message" placeholder="What do you plan to do with the API?" required></textarea>
+            <button type="submit" id="message-button">Send</button>
+        </form>
+    </div>
+
+</div>
+
+
+
+
+
+<footer class="footer">
+    <i class="fa-regular fa-copyright"></i>
+    <p>All Rights Reserved | Made and Designed By Mainak</p>
+</footer>
+
+<script th:src="@{/js/home.js}"></script>
+
+</body>
+</html>

@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    /*background: #f0f2f5;*/
+    background: gray;
+    color: #333;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 9%;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+.hamburger{
+    display: none;
+    width:20px;
+    height:20px;
+    flex-direction: column;
+    cursor: pointer;
+}
+.hamburger .list {
+    width: 25px;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 4px 0;
+}
+.close{
+    display: none;
+    margin-right: 20px;
+    flex-direction: column;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 1001;
+}
+.close.active {
+    display: block;
+}
+.hamburger.hide {
+    display: none;
+}
+.content.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-size: 1.5rem;
+    gap: 1.5rem;
+}
+.navbar .name h1{
+    font-size: 36px;
+    font-family: "Calibri Light" , sans-serif;
+    cursor: pointer;
+}
+.navbar .content a {
+    margin: 0 15px;
+    text-decoration: none;
+
+    color: #333;
+    font-weight: 600;
+}
+.navbar nav a:hover {
+    color: #0073e6;
+}
+.social-icons{
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.social-link {
+    color: #333;
+    margin-left: 15px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.social-link:hover {
+    color: #0073e6;
+}
+
+.hero {
+    flex: 1;
+    margin-bottom: 5%;
+    position: relative;
+    top: 70px;
+    width: 100%;
+    height: 100vh;
+    border-bottom: gray 7px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+.hero h1 {
+    font-family: "Calibri Light" , sans-serif;
+    font-size: 2rem;
+    align-self: center;
+}
+.hero .about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+
+}
+.about div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 90%;
+    background-color: black;
+    border: 15px solid white;
+    color: white;
+    overflow: scroll;
+}
+.about span{
+    width: 90%;
+    padding: 10px;
+}
+.about ul{
+    width: 90%;
+    padding: 10px;
+}
+.about div .copy{
+    width: 50px;
+    height: 25px;
+    background-color: white;
+    align-self: flex-start;
+    cursor: pointer;
+}
+.hero pre{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+}
+.hero code{
+    padding: 10px;
+}
+
+
+.contact-form{
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    margin: 20px;
+}
+.lets-connect button{
+    font-size: 1.2rem;
+    margin: 10px 0;
+    padding: 10px;
+    width: 40%;
+    background: #0073e6;
+    transition: background  0.3s ease-in-out;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.lets-connect button:hover{
+    background: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+.contact-form h3{
+    margin: 10px 0;
+    padding: 10px;
+    color: white;
+}
+.contact-form input{
+    cursor: pointer;
+    width: 50%;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px 5px 5px 10px;
+
+}
+.contact-form textarea{
+    cursor: pointer;
+    width: 50%;
+    height: 100px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px 5px 5px 10px;
+}
+.contact-form button{
+    width:40%;
+    height: 50px;
+    border-radius:10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.contact-form button:hover{
+    background: #0073e6;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+
+
+
+.footer {
+    margin-top: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.footer p {
+    margin: 0;
+}
+@media Screen and (max-width: 1121px) {
+    .content {
+        display:none;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        backdrop-filter: blur(10px);
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+    .hamburger {
+        display:block;
+    }
+    .hero .overlay-text {
+        margin-top: 12%;
+    }
+
+
+}
+@media screen and (max-width: 351px) {
+    .navbar .name h1{
+        font-size: 20px;
+    }
+    .hero .overlay-text {
+        margin-top:100%;
+        margin-left:5%;
+    }
+    .hero .overlay-text {
+        color: white;
+    }
+}
+@media screen and (max-width:500px){
+    .navbar .name h1{
+        font-size: 20px;
+    }
+    .hero .overlay-text {
+        margin-top:100%;
+        margin-left:5%;
+        color:white;
+    }
+    .contact-form{
+        width: 90% !important;
+    }
+    .contact-form input {
+        width: 100%;
+
+    }
+    .contact-form textarea{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px){
+    .hero .overlay-text {
+        margin-top:80%;
+        color:white;
+    }
+}
+@media screen and (max-width: 912px){
+    .hero .overlay-text {
+        width:350px;
+    }
+}
+
+
